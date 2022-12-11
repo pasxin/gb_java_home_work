@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 public class SecondHomeworkFirstTask {
     /*
-           Первая задача: Распарсить файл с логами из заданий, выполненных на семинаре, найти записи уровня INFO/DEBUG.
-           К сожалению реализация логгера с семинара у меня не заработала поэтому я подключил другой логгер и
-           у меня парсится INFO/WARNING
+           РџРµСЂРІР°СЏ Р·Р°РґР°С‡Р°: Р Р°СЃРїР°СЂСЃРёС‚СЊ С„Р°Р№Р» СЃ Р»РѕРіР°РјРё РёР· Р·Р°РґР°РЅРёР№, РІС‹РїРѕР»РЅРµРЅРЅС‹С… РЅР° СЃРµРјРёРЅР°СЂРµ, РЅР°Р№С‚Рё Р·Р°РїРёСЃРё СѓСЂРѕРІРЅСЏ INFO/DEBUG.
+           Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ СЂРµР°Р»РёР·Р°С†РёСЏ Р»РѕРіРіРµСЂР° СЃ СЃРµРјРёРЅР°СЂР° Сѓ РјРµРЅСЏ РЅРµ Р·Р°СЂР°Р±РѕС‚Р°Р»Р° РїРѕСЌС‚РѕРјСѓ СЏ РїРѕРґРєР»СЋС‡РёР» РґСЂСѓРіРѕР№ Р»РѕРіРіРµСЂ Рё
+           Сѓ РјРµРЅСЏ РїР°СЂСЃРёС‚СЃСЏ INFO/WARNING
            */
     public static final Logger logger = Logger.getLogger(Main.class.getName());
 
@@ -18,7 +18,7 @@ public class SecondHomeworkFirstTask {
         writer();
     }
         public static ArrayList<String> getFiles () {
-            logger.log(Level.INFO, "Запущен метод getFiles");
+            logger.log(Level.INFO, "Р—Р°РїСѓС‰РµРЅ РјРµС‚РѕРґ getFiles");
             File file = new File("C:\\TEST");
             File[] files = file.listFiles();
             ArrayList<String> names;
@@ -26,13 +26,13 @@ public class SecondHomeworkFirstTask {
                 names = new ArrayList<String>(Arrays.asList(file.list()));
                 return names;
             } catch (NullPointerException nullPointerException) {
-                logger.log(Level.WARNING, "Файлы не найдены в этой папке");
+                logger.log(Level.WARNING, "Р¤Р°Р№Р»С‹ РЅРµ РЅР°Р№РґРµРЅС‹ РІ СЌС‚РѕР№ РїР°РїРєРµ");
             }
             return null;
         }
 
         public static void writer () throws IOException {
-            logger.log(Level.INFO, "Запущен метод writer");
+            logger.log(Level.INFO, "Р—Р°РїСѓС‰РµРЅ РјРµС‚РѕРґ writer");
             FileOutputStream fileOutputStream = new FileOutputStream("fifthTask.txt");
             try {
                 ArrayList<String> files = getFiles();
@@ -42,7 +42,7 @@ public class SecondHomeworkFirstTask {
 
                 }
             } catch (NullPointerException nullPointerException) {
-                logger.log(Level.WARNING, "В предыдущем методе вернул null");
+                logger.log(Level.WARNING, "Р’ РїСЂРµРґС‹РґСѓС‰РµРј РјРµС‚РѕРґРµ РІРµСЂРЅСѓР» null");
             }
         }
         public static void ParsingFile () throws IOException {

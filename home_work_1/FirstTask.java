@@ -2,20 +2,20 @@ import java.util.Scanner;
 
 public class FirstHomeworkFirstTask {
     public static void main (String[] args) {
-        //Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
+        //Р’С‹С‡РёСЃР»РёС‚СЊ n-РѕРµ С‚СЂРµСѓРіРѕР»СЊРЅРѕРіРѕ С‡РёСЃР»Рѕ(СЃСѓРјРјР° С‡РёСЃРµР» РѕС‚ 1 РґРѕ n), n! (РїСЂРѕРёР·РІРµРґРµРЅРёРµ С‡РёСЃРµР» РѕС‚ 1 РґРѕ n)
         int number;
         int resultsum=0;
         int resultproduct =1;
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите число: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ");
         number = input.nextInt();
         input.close();
-        System.out.println(number+"-ое треугольное число");
+        System.out.println(number+"-РѕРµ С‚СЂРµСѓРіРѕР»СЊРЅРѕРµ С‡РёСЃР»Рѕ");
         for (int i = 0; i <= number; i++) {
             resultsum +=i;
         }
         System.out.println(resultsum);
-        System.out.println("Произведение чисел от 1 до n равно: ");
+        System.out.println("РџСЂРѕРёР·РІРµРґРµРЅРёРµ С‡РёСЃРµР» РѕС‚ 1 РґРѕ n СЂР°РІРЅРѕ: ");
         for (int i = 1; i <= number; i++) {
             resultproduct *=i;
         }

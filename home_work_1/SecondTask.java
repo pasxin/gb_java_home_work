@@ -1,24 +1,27 @@
 import java.util.Scanner;
 
-public class FirstHomeworkFirstTask {
-    public static void main (String[] args) {
-        //Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
-        int number;
-        int resultsum=0;
-        int resultproduct =1;
+public class FirstHomeworkSecondTask {
+    public static void main(String[] args) {
+        //Р’С‹РІРµСЃС‚Рё РІСЃРµ РїСЂРѕСЃС‚С‹Рµ С‡РёСЃР»Р° РѕС‚ 1 РґРѕ 1000
+        int resultsimple = 0;
+        int temp = 0;
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите число: ");
-        number = input.nextInt();
+        System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ");
+        resultsimple = input.nextInt();
         input.close();
-        System.out.println(number+"-ое треугольное число");
-        for (int i = 0; i <= number; i++) {
-            resultsum +=i;
+        //System.out.println("1");
+        for (int i = 2; i < resultsimple + 1; i++) {
+            for (int j = 2; j < i; j++) {
+                //System.out.println(i%j);
+                if ((i % j) == 0) {
+                    temp = temp + 1;
+                }
+            }
+            if (temp == 0) {
+                System.out.print(i+" ");
+            } else {
+                temp = 0;
+            }
         }
-        System.out.println(resultsum);
-        System.out.println("Произведение чисел от 1 до n равно: ");
-        for (int i = 1; i <= number; i++) {
-            resultproduct *=i;
-        }
-        System.out.println(resultproduct);
     }
 }

@@ -21,10 +21,10 @@ public class SecondHomeworkSecondTask {
     public static List<Integer> GenerateArray() throws IOException {
         int a;
         ArrayList <Integer> arr = new ArrayList<>();
-        System.out.println("Введите длину списка");
+        System.out.println("Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ СЃРїРёСЃРєР°");
         Scanner in = new Scanner(System.in);
         a = in.nextInt();
-        System.out.println("Введите элемент списка");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР°");
         for (int i = 0; i <= a-1; i++) {
             arr.add (in.nextInt());
         }

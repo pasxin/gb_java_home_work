@@ -6,14 +6,14 @@ public class FirstHomeworkThirdTask {
         double secondNumber = 0;
         int action = 0;
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите действие (1 - '+',2 - '-',3 - '*' или 4 - '/'): ");
+        System.out.println("Р’РІРµРґРёС‚Рµ РґРµР№СЃС‚РІРёРµ (1 - '+',2 - '-',3 - '*' РёР»Рё 4 - '/'): ");
         action = input.nextInt();
-        System.out.println("Введите первое число: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ: ");
         firstNumber = input.nextDouble();
-        System.out.println("Введите второе число: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ: ");
         secondNumber = input.nextDouble();
         input.close();
-        System.out.println("Результат: ");
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚: ");
         if (action == 1){
             System.out.println(firstNumber+secondNumber);
         }
@@ -26,6 +26,6 @@ public class FirstHomeworkThirdTask {
         else if (action == 4){
             System.out.println(firstNumber/secondNumber);
         }
-        else System.out.println ("Вы не ввели поддерживаемое действие");
+        else System.out.println ("Р’С‹ РЅРµ РІРІРµР»Рё РїРѕРґРґРµСЂР¶РёРІР°РµРјРѕРµ РґРµР№СЃС‚РІРёРµ");
     }
 }
